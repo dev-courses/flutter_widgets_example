@@ -12,7 +12,14 @@
 git clone https://github.com/dev-courses/flutter_widgets_example.git
 ```
 
-Для запуска проекта выполните `flutter run` или воспользуйтесь инструментами вашей IDE.
+Для запуска проекта выполните:
+
+```bash
+flutter pub get
+flutter run
+```
+
+Или воспользуйтесь инструментами вашей IDE.
 
 ### Где искать описание и задание?
 
