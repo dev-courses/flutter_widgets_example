@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widgets_example/presentation/home/home_screen.dart';
+
+import 'routes.dart';
 
 class Application extends StatelessWidget {
   // Этот виджет является корневым в приложении
@@ -10,9 +11,7 @@ class Application extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      routes: {
-        '/': (_) => HomeScreen(),
-      },
+      routes: Routes.routes,
     );
   }
 }

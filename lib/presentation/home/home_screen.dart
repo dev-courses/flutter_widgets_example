@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets_example/internal/routes.dart';
+import 'package:flutter_widgets_example/presentation/ui/list_item.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -6,36 +8,26 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
+      appBar: AppBar(
+        title: Text('Flutter widgets example'),
+      ),
+      body: SingleChildScrollView(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
-            ),
+          children: [
+            _buildBasics(),
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ),
+    );
+  }
+
+  Widget _buildBasics() {
+    return ListItem(
+      title: 'Базовые компоненты',
+      onTap: () => Navigator.pushNamed(context, Routes.to.basics()),
     );
   }
 }
