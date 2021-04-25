@@ -13,6 +13,7 @@ class BasicsScreen extends StatelessWidget {
         child: Column(
           children: [
             _buildScaffold(context),
+            _buildText(context),
           ],
         ),
       ),
@@ -23,6 +24,13 @@ class BasicsScreen extends StatelessWidget {
     return ListItem(
       title: 'Scaffold',
       onTap: () => Navigator.pushNamed(context, Routes.to.scaffold()),
+    );
+  }
+
+  Widget _buildText(BuildContext context) {
+    return ListItem(
+      title: 'Text',
+      onTap: () => Navigator.pushNamed(context, Routes.to.text()),
     );
   }
 }
