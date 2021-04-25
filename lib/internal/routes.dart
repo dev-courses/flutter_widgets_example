@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widgets_example/presentation/basics/basics_screen.dart';
-import 'package:flutter_widgets_example/presentation/basics/widgets/scaffold/scaffold_screen.dart';
+import 'package:flutter_widgets_example/presentation/basics/scaffold/scaffold_screen.dart';
 import 'package:flutter_widgets_example/presentation/home/home_screen.dart';
 
 class Routes {

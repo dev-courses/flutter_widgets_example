@@ -1,16 +1,31 @@
 # flutter_widgets_example
 
-A new Flutter project.
+Приложение для изучения виджетов Flutter.
+
+Содержит в себе примеры использования виджетов с описанием использованных параметров, а также задания для закрепления.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Для получения копии репозитория выполните:
 
-A few resources to get you started if this is your first Flutter project:
+```bash
+git clone https://github.com/dev-courses/flutter_widgets_example.git
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Для запуска проекта выполните `flutter run` или воспользуйтесь инструментами вашей IDE.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Где искать описание и задание?
+
+В исходном коде.
+
+Для каждого расмотренного виджета в приложении имеется отдельный экран, в файле исходного кода экрана есть описание компонента и его параметров, а также предлагаемые задания.
+
+### Структура проекта
+
+Все экраны приложения расположены в директории `lib/presentation`.
+
+Главный экран приложения - в `lib/presentation/home`.
+
+Все остальные экраны сгруппированы по темам, соответствующие им файлы исходного кода сгруппированы аналогично.
+
+Например, код с описанием для экрана `"Главный экран" -> "Базовые компоненты" -> "Scaffold"` нужно искать по адресу `lib/presentation/basics/scaffold/scaffold_screen.dart`
